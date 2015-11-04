@@ -29,5 +29,5 @@ RUN apt-get install -y rsync
 WORKDIR /home
 ADD cudnn-7.0-linux-x64-v3.0-prod.tgz /home
 RUN ls -la
-RUN rsync -a cuda /usr/local/cuda
+RUN rsync -a cuda/ /usr/local/cuda/
 RUN rm -rf cuda
